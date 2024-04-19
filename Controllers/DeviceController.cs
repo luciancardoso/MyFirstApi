@@ -14,9 +14,11 @@ public class DeviceController : MyFirstApiBaseController
 
         //return Ok(Author);
 
-        var laptop = new Smartphone();
-        var model = laptop.GetBrand();
+        //var laptop = new Smartphone();
+        //var model = laptop.GetBrand();
 
-        return Ok(model);
+        var key = GetCustomKey();
+
+        return Ok(key);
     }
 }
